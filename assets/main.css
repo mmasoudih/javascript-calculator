@@ -1,0 +1,75 @@
+@import 'vazir-font/fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+::selection {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(48, 44, 255);
+    font-family: "Vazir-Persian";
+    font-size: 20px;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    text-align: right;
+    border: none;
+    outline: none;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: default;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calculator span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: seagreen;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.calculator span:active {
+    background: rgb(4, 65, 30);
+}
+
+.calculator span.clear {
+    grid-column: span 2;
+    width: 122px;
+    background: rgb(255, 28, 28);
+}
+
+.calculator span.plus {
+    grid-row: span 2;
+    height: 122px;
+}
+
+.calculator span.equal {
+    background: rgb(0, 114, 207);
+    border-bottom-right-radius: 10px;
+}
+
+.calculator span.zero{
+    border-bottom-left-radius: 10px;
+}
