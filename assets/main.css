@@ -16,7 +16,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(48, 44, 255);
+    background: #ffe259;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-family: "Vazir-Persian";
     font-size: 20px;
 }
@@ -44,20 +47,20 @@ body {
     width: 60px;
     height: 60px;
     color: #fff;
-    background: seagreen;
+    background: rgb(73, 73, 73);
     place-items: center;
     border: 1px solid rgba(0, 0, 0, .1);
     cursor: pointer;
 }
 
 .calculator span:active {
-    background: rgb(4, 65, 30);
+    background: rgb(0, 0, 0);
 }
 
 .calculator span.clear {
     grid-column: span 2;
     width: 122px;
-    background: rgb(255, 28, 28);
+    background: rgb(255, 36, 145);
 }
 
 .calculator span.plus {
@@ -66,10 +69,10 @@ body {
 }
 
 .calculator span.equal {
-    background: rgb(0, 114, 207);
+    background: rgb(1, 140, 255);
     border-bottom-right-radius: 10px;
 }
 
-.calculator span.zero{
+.calculator span.zero {
     border-bottom-left-radius: 10px;
 }
